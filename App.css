@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-size: 62.5%;
+  text-align: center;
+}
+
+.App-header{
+  min-height: 10vh;
+  background: rgb(68, 67, 67);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.search-bar{
+  width: 50%;
+  padding: .5rem;
+}
+
+.search-button{
+  color: white;
+  background: lightseagreen;
+  padding: .5rem;
+  margin: .5rem;
+  border: none;
+}
+.result{
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:1rem;
+}
+
+img{
+  height: 25rem;
+  width: 25rem;
+}
+
+@media only screen and (max-width:1224px){
+  .img{
+    height: auto;
+    width: auto;
+  }
+  .result{
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  }
+}
